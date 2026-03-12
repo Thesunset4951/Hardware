@@ -1,56 +1,33 @@
-# 🚨 ระบบเข็มขัดตรวจวัดการหกล้ม
+# Fall Detection Belt System Documentation
 
-ระบบช่วยเหลือผู้สูงอายุและผู้พิการ ที่สามารถตรวจจับการหกล้มและแจ้งเตือนผู้ดูแลอย่างรวดเร็ว
+## Architecture Diagram
+![Architecture Diagram](link_to_architecture_diagram)
 
-## 📋 สารบัญ
-- [ภาพรวมของโปรเจกต์](#ภาพรวมของโปรเจกต์)
-- [คุณสมบัติหลัก](#คุณสมบัติหลัก)
-- [สถาปัตยกรรมระบบ](#สถาปัตยกรรมระบบ)
-- [อุปกรณ์ที่ใช้](#อุปกรณ์ที่ใช้)
-- [วิธีการติดตั้ง](#วิธีการติดตั้ง)
-- [วิธีการใช้งาน](#วิธีการใช้งาน)
+## Components List
+- Sensor module
+- Microcontroller
+- Power supply
+- Alert module
 
-## 📖 ภาพรวมของโปรเจกต์
+## Installation Instructions
+1. Connect the sensor module to the microcontroller.
+2. Install the power supply unit.
+3. Set up the alert module for notifications.
 
-ระบบเข็มขัดตรวจวัดการหกล้มนี้ได้รับการออกแบบมาเพื่อ:
-- ✅ ตรวจจับการหกล้มของผู้สูงอายุและผู้พิการ
-- ✅ ระบุตำแหน่งผู้ป่วยด้วย GPS
-- ✅ แจ้งเตือนผู้ดูแลทันทีผ่าน Google Chat
-- ✅ แยกระดับความรุนแรงของการหกล้ม
+## Device Connections
+- **Sensor to Microcontroller:** Pin1 to Pin A, Pin2 to Pin B...
+- **Power connections** should be consolidated and secured.
 
-## ⭐ คุณสมบัติหลัก
+## Usage Guide
+1. Turn on the device using the switch.
+2. Monitor the status LED for operational feedback.
 
-### บอร์ดของผู้สูงอายุ (Patient Board)
-1. **เซนเซอร์ตรวจจับการหกล้ม (MPU6050)**
-   - ตรวจวัดความเร่งในแกน X, Y, Z
-   - ระบุความรุนแรงของการหกล้มจากช่วงค่า
-   - แยกระดับความรุนแรงของการหกล้ม
+## Alert System
+- The system will send alerts via SMS or email when a fall is detected.
 
-2. **ติดตามตำแหน่ง (GPS - GY-NEO-6M)**
-   - ส่งพิกัดผู้ป่วยในเวลาจริง
-   - แมปตำแหน่งบน Google Maps
+## Safety Warnings
+- Ensure that the device is worn correctly for accurate detection.
+- Regularly check battery life to avoid malfunction.
 
-3. **ระบบแจ้งเตือน**
-   - เสียง buzzer เตือนผู้ป่วย
-   - ไฟ LED สีแดงกระพริบ
-   - ส่งข้อมูลไป Google Chat
-
-4. **ปุ่มควบคุม**
-   - ยกเลิกการแจ้งเตือนด้วยการกดปุ่มบนบอร์ด
-
-### บอร์ดของผู้ดูแล (Caregiver Board)
-1. **รับสัญญาณจากผู้ป่วย**
-   - ติดตามข้อมูลการหกล้มแบบเรียลไทม์
-
-2. **ระบบแจ้งเตือนแบบหลายลำดับชั้น**
-   - Buzzer เสียงต่างกันตามความรุนแรง
-   - ไฟ LED สีแดงกระพริบ
-
-3. **หน้าจอข้อมูล (OLED)**
-   - แสดงระดั���ความรุนแรงของการหกล้ม
-   - ข้อมูลสถานะผู้ป่วย
-
-4. **ปุ่มควบคุม**
-   - หยุด buzzer และ LED
-
-## 🏗️ สถาปัตยกรรมระบบ
+## License Information
+This project is licensed under the MIT License. See the LICENSE file for details.
