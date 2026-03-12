@@ -1,33 +1,54 @@
 # Fall Detection Belt System Documentation
 
-## Architecture Diagram
-![Architecture Diagram](link_to_architecture_diagram)
+## Patient Board
+- Overview of functionalities
+- Data display
+- Interaction with the caregiver board
+
+## Caregiver Board
+- Overview of functionalities
+- Notifications and alerts
+- Interaction with the patient board
 
 ## Components List
-- Sensor module
-- Microcontroller
-- Power supply
-- Alert module
+- List of all components used in the fall detection belt system.
+  - Sensor
+  - Microcontroller
+  - Power supply
+  - Communication modules
 
 ## Installation Instructions
-1. Connect the sensor module to the microcontroller.
-2. Install the power supply unit.
-3. Set up the alert module for notifications.
+1. Gather all components listed above.
+2. Assemble according to the provided diagram.
+3. Ensure all connections are secure.
+4. Power on the device to check for functionality.
 
 ## Device Connections
-- **Sensor to Microcontroller:** Pin1 to Pin A, Pin2 to Pin B...
-- **Power connections** should be consolidated and secured.
+- Schematic diagram of connections between components.
+- Description of each connection function.
 
 ## Usage Guide
-1. Turn on the device using the switch.
-2. Monitor the status LED for operational feedback.
+- Instructions on how to operate the system.
+- User interface navigations and features.
 
-## Alert System
-- The system will send alerts via SMS or email when a fall is detected.
+## Alert System Levels
+- Description of different alert levels:
+  - Level 1: Warning
+  - Level 2: Alert
+  - Level 3: Emergency
+
+## File Structure
+- Directory structure for the source code and resources.
+  - `src/`: Main code files
+  - `docs/`: Documentation files
+  - `resources/`: Assets and images
 
 ## Safety Warnings
-- Ensure that the device is worn correctly for accurate detection.
-- Regularly check battery life to avoid malfunction.
+- Important precautions to take while using the device.
+- Regular maintenance recommendations.
+
+## Contact Information
+- Support email: support@example.com
 
 ## License Information
-This project is licensed under the MIT License. See the LICENSE file for details.
+- This project is licensed under the MIT License. For more details, see the `LICENSE` file.
